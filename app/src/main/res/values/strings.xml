@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">TourCleveland</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_attraction">Attraction</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_sports">Sports</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_parks">Parks</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_eats">Eats</string>
+
+    <!-- Sports Fragment -->
+    <string name="baseball">Cleveland Indians</string>
+    <string name="baseball_description">American League Central Division plays home at Progressive Field </string>
+    <string name="football">Cleveland Browns</string>
+    <string name="football_description">NFL AFC plays home at FirstEnergy Stadium</string>
+    <string name="basketball">Cleveland Cavaliers</string>
+    <string name="basketball_description">NBA Easter Conference Central Division plays home at Quicken Loan Arena</string>
+    <string name="hockey">Cleveland Monster</string>
+    <string name="hockey_description">American Hockey League plays home at Quicken Loan Arena</string>
+    <string name="soccer">Cleveland SC</string>
+    <string name="soccer_description">National Premier League starting in 2018</string>
+
+    <!-- Attraction Fragment -->
+    <string name="rock_n_roll">Rock &amp; Roll Hall of Fame</string>
+    <string name="rock_n_roll_description">Where the rock and roll music industry honors its finest entertainers</string>
+    <string name="science_center">Great Lakes Science Center</string>
+    <string name="science_center_description">An educational experience that will spark your curiosity about the science behind things like space travel and wind</string>
+    <string name="playhouse">Playhouse Square</string>
+    <string name="playhouse_square_description">Locate in the heart of Clevelands Theater District with nine theaters operate separately.</string>
+    <string name="market">West Side Market</string>
+    <string name="market_description">A longest running public market in Cleveland with more than 100 vendors.</string>
+    <string name="museum">Cleveland Museum of Art</string>
+    <string name="museum_description">Museum features a variety of art around the world.</string>
+    <string name="contemporary_museum">Museum of Contemporary Art</string>
+    <string name="contemporary_museum_description">Features rotating, temporary exhibits by local, national, and international artists. </string>
+    <string name="natural_history_museum">Cleveland Museum of Natural History</string>
+    <string name="natural_history_museum_description">Home to some outstanding exhibits showcasing collections and research in areas from paleontology to botany. </string>
+    <string name="aquarium">Greater Cleveland Aquarium</string>
+    <string name="aquarium_description">Features 5,000 creatures from Great Lake Perch to exotic lionfish, anemones, crustaceans and sea horses. </string>
+    <string name="botanical_garden">Cleveland Botanical Garden</string>
+    <string name="botanical_garden_description">Features 20 unique gardens showcasing flora and fauna from around the world.</string>
+
+
+    <!-- Parks Fragment -->
+    <string name="national_park">Cuyahoga National Park</string>
+    <string name="national_park_description">Free entrance with over 125 miles of hiking trails.</string>
+    <string name="edgewater_park">Edgewater Park</string>
+    <string name="edgewater_park_description">Features 9000ft of shoreline and swim beaches, boat ramps, fishing pier, and picnic areas.</string>
+    <string name="cultural_garden">Cleveland Cultural Gardens</string>
+    <string name="cultural_garden_description">More than 30 gardens designed and cultivated by distinct cultural or nationality groups.</string>
+    <string name="shaker_lakes">Nature Center at Shaker Lakes</string>
+    <string name="shaker_lakes_description">Center is home to many wildlife and plant speicies living in a variety of natural habitats.</string>
+    <string name="zoo">Cleveland Metroparks Zoo</string>
+    <string name="zoo_description">One of the oldest zoo in the United States.</string>
+    <string name="tow_path">Ohio and Erie Towpath Trail</string>
+    <string name="tow_path_description">Runs through the heart of Ohio and Erie Canalway, one can bike, hike, run along the 87-mile long Towpath trail. </string>
+
+    <!-- Eats Fragment -->
+    <string name="little_Italy">Historic Little Italy</string>
+    <string name="little_Italy_description">Located in the University Circle, it\'s home to the best restaurants and art galleries in Ohio.  </string>
+    <string name="east_4th_street">East 4th Street</string>
+    <string name="east_4th_description">Between Prospect and Euclid, East Fourth Street is known for its top notch restaurants.</string>
+    <string name="ohio_city">Ohio City</string>
+    <string name="ohio_city_description">Ohio city neighborhood surrounding the Cleveland\'s West Side Market is a foodie paradise with many restaurants and bars.</string>
+    <string name="tremont">Tremont Neighborhoods Restaurants</string>
+    <string name="tremont_description">Trending neighborhoods with top fine dining options</string>
+    <string name="flats">The Flats East Bank</string>
+    <string name="flats_description">Waterfront dining options </string>
+
+
+</resources>
