@@ -25,20 +25,16 @@ public class TourAdapter extends ArrayAdapter<Tour> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
         Tour currentTour = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView tourNameTextView = (TextView) listItemView.findViewById(R.id.tourName_text_view);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
-        tourNameTextView.setText(currentTour.getTourname());
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView tourDescriptionTextView = (TextView) listItemView.findViewById(R.id.tourDescription_text_view);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
-        tourDescriptionTextView.setText(currentTour.getTourBriefDescription());
+        tourNameTextView.setText(currentTour.getTourName());
+
+//        TextView tourDescriptionTextView = (TextView) listItemView.findViewById(R.id.tourDescription_text_view);
+//
+//        tourDescriptionTextView.setText(currentTour.getTourBriefDescription());
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
 

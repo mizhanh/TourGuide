@@ -1,13 +1,14 @@
 package com.example.android.tourguide;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -26,17 +27,30 @@ public class SportsFragment extends Fragment {
 
         //Create a list of sports team
         final ArrayList <Tour> tours = new ArrayList<Tour>();
-        tours.add(new Tour(R.string.baseball, R.string.baseball_description, R.drawable.baseball2));
-        tours.add(new Tour(R.string.basketball, R.string.basketball_description, R.drawable.cavs));
-        tours.add(new Tour(R.string.football, R.string.football_description, R.drawable.browns));
-        tours.add(new Tour(R.string.hockey, R.string.hockey_description, R.drawable.monsters));
-        tours.add(new Tour(R.string.soccer, R.string.soccer_description, R.drawable.soccer));
+        tours.add(new Tour(getString(R.string.baseball), getString(R.string.baseball_description), R.drawable.baseball2));
+        tours.add(new Tour(getString(R.string.basketball), getString(R.string.basketball_description), R.drawable.cavs));
+        tours.add(new Tour(getString(R.string.football), getString(R.string.football_description), R.drawable.browns));
+        tours.add(new Tour(getString(R.string.hockey), getString(R.string.hockey_description), R.drawable.monsters));
+        tours.add(new Tour(getString(R.string.soccer), getString(R.string.soccer_description), R.drawable.soccer));
 
-        TourAdapter adapter = new TourAdapter(getActivity(), tours);
+        TourAdapter tourAdapter = new TourAdapter(getActivity(), tours);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        final ListView listView = (ListView) rootView.findViewById(R.id.list);
+        listView.setAdapter(tourAdapter);
 
-        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
+                Tour tour = tours.get(position);
+                Intent intent = new Intent(getActivity(), TourDetails.class);
+
+                intent.putExtra("tourName", tour.getTourName());
+                intent.putExtra("tourNameDescription", tour.getTourBriefDescription());
+                intent.putExtra("imageResourceId", tour.getImageResourceId());
+
+                startActivity(intent);
+            }
+        });
 
         return rootView;
     }

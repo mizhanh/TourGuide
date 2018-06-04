@@ -2,29 +2,29 @@ package com.example.android.tourguide;
 
 public class Tour {
 
-    private int mTourName;
-    private int mTourBriefDescription;
+    private String mTourName;
+    private String mTourBriefDescription;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public Tour(int vTourName, int vTourBriefDescription) {
+    public Tour(String vTourName, String vTourBriefDescription) {
         mTourName = vTourName;
         mTourBriefDescription = vTourBriefDescription;
     }
 
-    public Tour(int vTourName, int vTourBriefDescription, int vImageResourceId) {
+    public Tour(String vTourName, String vTourBriefDescription, int vImageResourceId) {
         mTourName = vTourName;
         mTourBriefDescription = vTourBriefDescription;
         mImageResourceId = vImageResourceId;
 
     }
 
-    public int getTourname(){
+    public String getTourName(){
         return mTourName;
     }
 
-    public int getTourBriefDescription(){
+    public String getTourBriefDescription(){
         return mTourBriefDescription;
     }
 
